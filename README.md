@@ -18,10 +18,11 @@ Please ignore the pcap directory, i added the pcap files i used for reverse engi
 Either copy the [G213Colors.py](https://raw.githubusercontent.com/SebiTimeWaster/G213Colors/master/G213Colors.py) file to a directory of your choosing directly or clone this project with git. 
 
 ### Prerequisites
-You need at least [Python 2.x](https://www.python.org/) and [PyUSB](https://walac.github.io/pyusb/) which are usually already installed on Debian, Ubuntu and other distributions.
+* [Python 2.4](https://www.python.org/) (which is usually already installed)
+* [PyUSB](https://github.com/walac/pyusb) (please see their instructions on how to install)
 
 ## Usage
-G213Colors needs to be run as root as long as you didn't add your own user as a privileged user for that USB device.
+G213Colors needs to be run as root as long as your user doesn't have access privileges for that USB device ([How to do this](http://stackoverflow.com/a/32022908/2948666), please use "046d" as idVendor and "c336" as idProduct).
 
 G213Colors is designed to be used as a shell script for maximum flexibilty and the syntax is easy and Bash-like.
 For help on how to use G213Colors call the script without any arguments:
