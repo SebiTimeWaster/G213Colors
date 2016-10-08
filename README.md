@@ -31,6 +31,9 @@ For help on how to use G213Colors call the script without any arguments:
 sudo python G213Colors.py
 ```
 
+### Known issues
+Setting the color for all 5 "fields" separately can lock the keyboard up until it is pulled and plugged in again.
+
 ## Changelog
 Changelog v0.1:
 * Initial checkin
