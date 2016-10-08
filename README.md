@@ -18,7 +18,7 @@ Please ignore the pcap directory, i added the pcap files i used for reverse engi
 Either download the [G213Colors.py](https://raw.githubusercontent.com/SebiTimeWaster/G213Colors/master/G213Colors.py) file to a directory of your choosing **_or_** clone this project with git. 
 
 ### Prerequisites
-* [Python](https://www.python.org/) > 2.4 or 3.x (which is usually already installed)
+* [Python](https://www.python.org/) >= 2.4 or 3.x (which is usually already installed)
 * [PyUSB](https://github.com/walac/pyusb) (please see their instructions on how to install)
 
 ## Usage
