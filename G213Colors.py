@@ -26,6 +26,7 @@
 import sys
 import usb.core
 import usb.util
+import binascii
 from time import sleep
 
 
@@ -68,31 +69,31 @@ def disconnectG():
         device.attach_kernel_driver(wIndex)
 
 def sendData(data):
-    device.ctrl_transfer(bmRequestType, bmRequest, wValue, wIndex, data)
+    # decode data to binary and send it
+    device.ctrl_transfer(bmRequestType, bmRequest, wValue, wIndex, binascii.unhexlify(data))
 
 def sendColorCommand(colorHex, field = 0):
-    # create command, decode it to binary and send it
-    sendData(colorCommand.format(str(format(field, '02x')), colorHex).decode("hex"))
+    sendData(colorCommand.format(str(format(field, '02x')), colorHex))
 
 def sendBreatheCommand(colorHex, speed):
-    sendData(breatheCommand.format(colorHex, str(format(speed, '04x'))).decode("hex"))
+    sendData(breatheCommand.format(colorHex, str(format(speed, '04x'))))
 
 def sendCycleCommand(speed):
-    sendData(cycleCommand.format(str(format(speed, '04x'))).decode("hex"))
+    sendData(cycleCommand.format(str(format(speed, '04x'))))
 
 def printInfo():
-    print "G213Colors - Changes the key colors on a Logitech G213 Prodigy Gaming Keyboard"
-    print "\nOptions:"
-    print "-c                        Set the standard color (white)"
-    print "-c <color>                Set a custom color"
-    print "-c <color1> ... <color5>  Set custom colors for the 5 segments"
-    print "-b <color> <time>         Sets a color breathing animation"
-    print "-x <time>                 Sets a color cycling animation"
-    print "\nPlease note:"
-    print "* Color is a hex encoded color in the format RRGGBB"
-    print "  i.e. ff0000 is red, 00ff00 is green and so on,"
-    print "  abbreviated formats are not allowed"
-    print "* Time is in milliseconds, range: 32 - 65535"
+    print("G213Colors - Changes the key colors on a Logitech G213 Prodigy Gaming Keyboard")
+    print("\nOptions:")
+    print("-c                        Set the standard color (white)")
+    print("-c <color>                Set a custom color")
+    print("-c <color1> ... <color5>  Set custom colors for the 5 segments")
+    print("-b <color> <time>         Sets a color breathing animation")
+    print("-x <time>                 Sets a color cycling animation")
+    print("\nPlease note:")
+    print("* Color is a hex encoded color in the format RRGGBB")
+    print("  i.e. ff0000 is red, 00ff00 is green and so on,")
+    print("  abbreviated formats are not allowed")
+    print("* Time is in milliseconds, range: 32 - 65535")
 
 
 if "-" not in option:
