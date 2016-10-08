@@ -24,7 +24,6 @@ Either download the [G213Colors.py](https://raw.githubusercontent.com/SebiTimeWa
 ## Usage
 G213Colors needs to be run as root as long as your user doesn't have access privileges for that USB device ([How to do this](http://stackoverflow.com/a/32022908/2948666), please use "046d" as idVendor and "c336" as idProduct).
 
-G213Colors is designed to be used as a shell script for maximum flexibilty and the syntax is easy and Bash-like.
 For help on how to use G213Colors call the script without any arguments:
 
 ```Bash
