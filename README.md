@@ -32,7 +32,7 @@ sudo python G213Colors.py
 ```
 
 ### Known issues
-Setting the color for all 5 "fields" separately can lock the keyboard up until it is pulled and plugged in again.
+Setting the color for all 5 "fields" separately can lock up the ability to change the colors until the keyboard is pulled and plugged in again.
 
 ## Changelog
 Changelog v0.1:
