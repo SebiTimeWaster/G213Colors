@@ -15,7 +15,7 @@ The "Wave" color effect that is available with the Logitech software could not b
 ## Installation
 Please ignore the pcap directory, i added the pcap files i used for reverse engineering in case someone wants to use them for more features, they can be opened with [Wireshark](https://en.wikipedia.org/wiki/Wireshark).
 
-Either copy the [G213Colors.py](G213Colors/G213Colors.py) file to a directory of your choosing directly or clone this project with git. 
+Either copy the [G213Colors.py](https://raw.githubusercontent.com/SebiTimeWaster/G213Colors/master/G213Colors.py) file to a directory of your choosing directly or clone this project with git. 
 
 ### Prerequisites
 You need at least [Python 2.x](https://www.python.org/) and [PyUSB](https://walac.github.io/pyusb/) which are usually already installed on Debian, Ubuntu and other distributions.
