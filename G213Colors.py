@@ -41,8 +41,11 @@ breatheCommand = "11ff0c3a0002{}{}006400000000000000"
 cycleCommand   = "11ff0c3a0003ffffff0000{}64000000000000"
 device         = ""               # device resource
 isDetached     = False            # If kernel driver needs to be reattached
-option         = str(sys.argv[1]) # option to use
 numArguments   = len(sys.argv)    # number of arguments given
+if numArguments > 1:
+    option     = str(sys.argv[1]) # option to use
+else:
+    option     = ""
 
 
 def connectG():
