@@ -31,7 +31,7 @@ sudo python G213Colors.py
 ```
 
 ### Known issues
-* Setting the color for all 5 "fields" separately works shaky at best, usually some fields are skipped. If color changes don't work anymore try pulling the keyboard and plugged in again.
+* Setting the color for all 5 "fields" separately works shaky at best, usually some fields are skipped. If color changes don't work anymore try pulling the keyboard and plug it in again.
 
 ## Changelog
 Changelog v0.1:
