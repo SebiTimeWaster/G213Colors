@@ -22,13 +22,13 @@ Either download the [G213Colors.py](https://raw.githubusercontent.com/SebiTimeWa
 Please ignore the pcap directory, i added the pcap files i used for reverse engineering just in case someone wants to work with them. They can be opened with [Wireshark](https://en.wikipedia.org/wiki/Wireshark).
 
 ## Usage
-G213Colors needs to be run as root as long as your user doesn't have access privileges for that USB device ([How to do this](http://stackoverflow.com/a/32022908/2948666), please use "046d" as idVendor and "c336" as idProduct).
-
 For help on how to use G213Colors call the script without any arguments:
 
 ```Bash
 sudo python G213Colors.py
 ```
+
+G213Colors needs to be run as root as long as your user doesn't have access privileges for that USB device ([How to do this](http://stackoverflow.com/a/32022908/2948666), please use "046d" as idVendor and "c336" as idProduct).
 
 ### Known issues
 * Setting the color for all 5 "fields" separately works shaky at best, usually some fields are skipped. If color changes don't work anymore try pulling the keyboard and plug it in again.
