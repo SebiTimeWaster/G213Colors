@@ -10,7 +10,7 @@ Also my keyboard is attached to an Aten KVM switch which interferes with the Log
 G213Colors was built and tested as a Python script under Linux for the G213 keyboard specifically, but it could potentially be run under other OS'es and used for other Logitech keyboards as well, after some adaptation. 
 Please understand that i do not support any such adaptation, if you want to do it **you are on your own**.
 
-The "Wave" color effect that is available with the Logitech software could not be replicated since it is completely generated in the software by updating the colors every x ms (In contrast to the other effects which run on they keyboard itself). You could generate this effect with a script, but since G213Colors has to detach the kernel driver from one of the G213's interfaces to send data out the multimedia keys would most likely stop working. Unfortunately this is a side effect of the linux driver structure.
+The "Wave" color effect that is available with the Logitech software could not be replicated since it is completely generated in the software by updating the colors every x ms (In contrast to the other effects which run on the keyboard itself). You could generate this effect with a script, but since G213Colors has to detach the kernel driver from one of the G213's interfaces to send data out the multimedia keys would most likely stop working. Unfortunately this is a side effect of the linux driver structure.
 
 ## Installation
 Please ignore the pcap directory, i added the pcap files i used for reverse engineering in case someone wants to use them for more features, they can be opened with [Wireshark](https://en.wikipedia.org/wiki/Wireshark).
