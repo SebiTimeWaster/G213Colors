@@ -7,7 +7,7 @@ G213Colors lets you set the color(s) and certain effects of the illuminated keys
 Since Logitech is mostly ignoring the Linux market with their "Logitech Gaming Software" but i wanted to use my expensive new keyboard also under linux without tolerating the color cycling animation all the time i decided to reverse engineer their USB protocol and to write my own script to control the keyboard. 
 Also my keyboard is attached to an Aten KVM switch which interferes with the Logitech software to the degree that the computer becomes unusable in the worst case and the software does not start in the best case.
 
-G213Colors was built and tested as a Python script under Linux for the G213 keyboard specifically, but it could potentially be run under other OS'es and used for other Logitech keyboards as well, after some adaptation. 
+G213Colors was built and tested under Linux for the G213 keyboard specifically, but after some adaptation it could potentially be run under other OS'es and used for other Logitech keyboards as well. 
 Please understand that i do not support any such adaptation, if you want to do it **you are on your own**.
 
 The "Wave" color effect that is available with the Logitech software could not be replicated since it is completely generated in the software by updating the colors every x ms (In contrast to the other effects which run on the keyboard itself). You could generate this effect with a script, but since G213Colors has to detach the kernel driver from one of the G213's interfaces to send data out the multimedia keys would most likely stop working. Unfortunately this is a side effect of the linux driver structure.
