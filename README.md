@@ -1,7 +1,7 @@
 # G213Colors
 A script to change the key colors on a Logitech G213 Prodigy Gaming Keyboard.
 
-Please check out also these awesome forks:
+Please also check out these awesome forks:
 
 [G213Colors GUI](https://github.com/derEisele/G213Colors) - A cool grafical GUI you can use from the main menu
 
