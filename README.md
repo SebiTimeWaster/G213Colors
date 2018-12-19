@@ -26,6 +26,7 @@ Either download the [G213Colors.py](https://raw.githubusercontent.com/SebiTimeWa
 ### Prerequisites
 * [Python](https://www.python.org/) >= 2.4 or 3.x (which is usually already installed)
 * [PyUSB](https://github.com/walac/pyusb) (please see their instructions on how to install)
+* [RandomColor](https://github.com/davidmerfield/randomColor) (pip install randomcolor)
 
 Please ignore the pcap directory, i added the pcap files i used for reverse engineering just in case someone wants to work with them. They can be opened with [Wireshark](https://en.wikipedia.org/wiki/Wireshark).
 
@@ -39,6 +40,9 @@ sudo python G213Colors.py
 G213Colors needs to be run as root as long as your user doesn't have access privileges for that USB device ([How to do this](http://stackoverflow.com/a/32022908/2948666), please use "046d" as idVendor and "c336" as idProduct).
 
 ## Changelog
+Changelog v0.3:
+* Added feature: Assign random colors to keyboard by using -ra or -rs flag
+
 Changelog v0.2:
 * Fixed bug preventing setting all 5 color fields correctly, thanks to @oncecreated for finding this solution!
 * Added propper validation of user inputs
