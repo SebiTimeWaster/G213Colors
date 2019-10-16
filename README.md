@@ -12,8 +12,13 @@ Thanks to [derEisele](https://github.com/derEisele) and [JeroenED](https://githu
 ## What it does
 G213Colors lets you set the color(s) and certain effects of the illuminated keys on a G213 keyboard under Linux.
 
-Since Logitech is mostly ignoring the Linux market with their "Logitech Gaming Software" but i wanted to use my expensive new keyboard also under linux without tolerating the color cycling animation all the time i decided to reverse engineer their USB protocol and to write my own script to control the keyboard.
-Also my keyboard is attached to an Aten KVM switch which interferes with the Logitech software to the degree that the computer becomes unusable in the worst case and the software does not start in the best case.
+The original Software and Hardware has the following downsides:
+* There is no Linux software
+* The keyboard does not save the last setting, one has to re-set it every bootup / disconnect
+* The keyboard starts up with an annoying color cycle animation
+* The original software is unusable with KVM switches
+
+So i decided to reverse engineer their USB protocol and to write my own script to control the keyboard.
 
 G213Colors was built and tested under Linux for the G213 keyboard specifically, but after some adaptation it could potentially be run under other OS'es and used for other Logitech keyboards as well.
 Please understand that i do not support any such adaptation, if you want to do it **you are on your own**.
