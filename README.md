@@ -30,8 +30,10 @@ Either download the [G213Colors.py](https://raw.githubusercontent.com/SebiTimeWa
 
 ### Prerequisites
 * [Python](https://www.python.org/) >= 2.4 or 3.x (which is usually already installed)
-* [PyUSB](https://github.com/walac/pyusb) (please see their instructions on how to install)
-* [RandomColor](https://github.com/davidmerfield/randomColor) (pip install randomcolor)
+* [PyUSB](https://github.com/walac/pyusb)
+* [RandomColor](https://github.com/davidmerfield/randomColor)
+
+If you run the script as Root (Which is likely) please install the libraries also as root (E.g.: `sudo pip3 install pyusb`, `sudo pip3 install randomcolor`, use only "pip" for Python 2).
 
 Please ignore the pcap directory, i added the pcap files i used for reverse engineering just in case someone wants to work with them. They can be opened with [Wireshark](https://en.wikipedia.org/wiki/Wireshark).
 
