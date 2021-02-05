@@ -44,7 +44,10 @@ For help on how to use G213Colors call the script without any arguments:
 sudo python G213Colors.py
 ```
 
-G213Colors needs to be run as root as long as your user doesn't have access privileges for that USB device ([How to do this](http://stackoverflow.com/a/32022908/2948666), please use "046d" as idVendor and "c336" as idProduct).
+G213Colors needs to run as root as long as your user doesn't have access privileges for that USB device ([How to do this](http://stackoverflow.com/a/32022908/2948666), please use "046d" as idVendor and "c336" as idProduct).
+
+If you want to run the script when the keyboard is plugged in (For instance if you use a USB switch or KVM) use this udev rule (In this case the script is run by root):
+`ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c336", RUN+="/usr/bin/python /usr/local/bin/G213Colors.py -c 4F7F9F"`
 
 ## Changelog
 Changelog v0.3:
